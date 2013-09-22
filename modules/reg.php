@@ -87,11 +87,24 @@ if (isset($_POST['reg'])
         mysql_query("INSERT INTO `account` (`username`,`sha_pass_hash`,`email`,`last_ip`,`locked`,`expansion`) VALUES (UPPER('"
                 . $_POST['new_acc'] . "'),SHA1(UPPER(CONCAT('" . $_POST['new_acc'] . "',':','" . $_POST['pass1'] . "'))),'"
                 . $_POST['email'] . "','" . $_SERVER['REMOTE_ADDR'] . "','0','" . $def_exp_acc . "')");
+
+	$accid_query = "SELECT * FROM `account` WHERE `username`='" . strtoupper($_POST['new_acc']) . "'";
+
+	$accid_res = mysql_query($accid_query);
+
+	$accid_row = mysql_fetch_assoc($accid_res);
+
+	echo $accid_row['id'];
+
+	mysql_query("INSERT INTO `rbac_account_groups` (`accountId`, `groupId`, `realmId`) SELECT ".$accid_row['id'].", groupId, '-1' FROM rbac_security_level_groups WHERE secId = '0'");
+
+
         echo '<img src="images/yes.png"> <b>' . $txt['55'] . '</b><br><br><hr><div align="center"><A href="index.php">' . $txt[12] . '</a></div>';
         $query2 = "SELECT * FROM `account` WHERE `username`='" . strtoupper($_POST['new_acc'])
                 . "' AND sha_pass_hash ='"
                 . SHA1(strtoupper($_POST['new_acc'] . ':' . $_POST['pass1'])) . "'";
         $res2 = mysql_query($query2);
+
         if (mysql_num_rows($res2) == 1)
             {
             $row2 = mysql_fetch_assoc($res2);
