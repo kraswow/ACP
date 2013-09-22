@@ -93,8 +93,9 @@ if (isset($_POST['reg'])
 	$accid_res = mysql_query($accid_query);
 
 	$accid_row = mysql_fetch_assoc($accid_res);
-
-	echo $accid_row['id'];
+	
+	# Test string
+	#echo $accid_row['id'];
 
 	mysql_query("INSERT INTO `rbac_account_groups` (`accountId`, `groupId`, `realmId`) SELECT ".$accid_row['id'].", groupId, '-1' FROM rbac_security_level_groups WHERE secId = '0'");
 
