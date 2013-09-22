@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>ACP-account control panel</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <link href="skin.css" type="text/css" rel="stylesheet"  media="screen"/>
+    </head>
+    <body>
+        <div id="top" onclick="
+            this.getElementsByTagName('div')[0].style.display = 'none';
+            this.getElementsByTagName('div')[1].style.display = 'none';
+            this.getElementsByTagName('div')[2].style.display = 'none';
+            this.getElementsByTagName('div')[3].style.display = 'none';          
+             ">
+            <div style="display: none; text-align:center; font-size: 7pt;" >Кликни мышкой, чтобы закрыть.</div>
+            <div id="top_menu" style="display: none;" >
+                sel_realm
+            </div> 
+            <div id="top_menu" style="display: none;" >
+                acc
+            </div> 
+            <div id="top_menu" style="display: none;" >
+                char
+            </div> 
+            <div id="top_text" 
+                 onmouseover="
+                     this.parentNode.getElementsByTagName('div')[0].style.display = '';
+                     this.parentNode.getElementsByTagName('div')[1].style.display = '';
+                     this.parentNode.getElementsByTagName('div')[2].style.display = 'none';
+                     this.parentNode.getElementsByTagName('div')[3].style.display = 'none';
+                 
+                 ">
+                Реалм
+            </div>     
+            <div id="top_text"
+                 onmouseover="
+                     this.parentNode.getElementsByTagName('div')[0].style.display = '';
+                     this.parentNode.getElementsByTagName('div')[1].style.display = 'none';
+                     this.parentNode.getElementsByTagName('div')[2].style.display = '';
+                     this.parentNode.getElementsByTagName('div')[3].style.display = 'none';
+                 ">
+                Настройки
+            </div>
+            <div id="top_text"
+                 onmouseover="
+                     this.parentNode.getElementsByTagName('div')[0].style.display = '';
+                     this.parentNode.getElementsByTagName('div')[1].style.display = 'none';
+                     this.parentNode.getElementsByTagName('div')[2].style.display = 'none';
+                     this.parentNode.getElementsByTagName('div')[3].style.display = '';
+                 ">
+                Персанажи
+            </div>
+        </div>
+        <div id="top_bar">-
+        </div>
+        <div id="container">
+            <div id="sidebar">
+                menu
+            </div>
+            <div id="content">
+                content 
+            </div>
+        </div>
+    </body>
+</html>

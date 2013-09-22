@@ -1,0 +1,236 @@
+body {
+    font: 10pt Arial, Helvetica, sans-serif;
+    background: #fff url(logo.png) left top no-repeat;
+    color: #000000;
+    margin: 0em;
+}
+#container {
+    width: 966px; /* Ширина слоя */
+    margin: 0 auto; /* Выравнивание по центру */
+    margin-top: 40px;
+    background: url(white.png) repeat;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: grey;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 2px 1px 2px #aabbaf;
+}
+#sidebar {
+    margin-top: 45px;
+    width: 210px; /* Ширина слоя */
+    padding: 10px; /* Отступы вокруг текста */
+    float: left; /* Обтекание по правому краю */
+}
+#content {
+    margin-left: 210px; /* Отступ слева */
+    padding: 10px; /* Поля вокруг текста */
+    width: 756px;
+}
+#top {
+    position: fixed;
+    margin-left: 0px;
+    margin-top: 0;
+    top: 0px;
+    width: 240px;
+    padding: 0 5px;
+    background: url(blue.png) repeat;
+    border: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 2px 1px 2px #aaabbb;
+}
+#top_bar {
+    position: fixed;
+    margin-left: 256px;
+    margin-top: 0;
+    top: 0px;
+    width: 680px;
+    height: 30px;
+    padding: 5px 15px;
+    background: url(blue.png) repeat;
+    border: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 2px 1px 2px #aaabbb;
+}
+#top_text {
+    text-align: center;
+    font-size: 8pt;
+    width: 70px;
+    height: 80px;
+    margin-left: 5px;
+    padding: 5px 0;
+    float: left;
+}
+#top_menu {
+    width: 220px;
+    /* height: 80px; */
+    margin: 5px;
+    padding: 5px;
+    background: #fff;
+    border: navy;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-radius: 3px;
+}
+hr {
+    color: #000000;
+    height: 1px;
+    width: 90%;
+}
+a:link, a:visited {
+    color: #4D7282;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #cc6600;
+}
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+td.LoginText {
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+td.LoginInput {
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+td.LoginButton {
+    font-size:10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+td.NoTab {
+    border-bottom-width: 1px;
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+}
+td.TabActive{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    color:#FF9900;
+    border-bottom-width: 0px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-color: #000000;
+    background-color: #FFFFCC;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+}
+td.TabOther {
+    font-size:12px;
+    color: #333333;
+    font-family:Arial, Helvetica, sans-serif;
+    border-bottom-color: #000000;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: #333333;
+    border-top-width: 1px;
+    border-top-color: #333333;
+    border-right-width: 1px;
+    border-right-color: #333333;
+    background-color: #FFFFCC;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+}
+td.ContentMain {
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+
+    color: #333333;
+
+    background-color: #FFFFCC;
+
+    border-left-width: 1px;
+    border-left-color: #000000;
+    border-left-style: solid;
+
+    border-bottom-width: 1px;
+    border-bottom-color: #000000;
+    border-bottom-style: solid;
+
+    border-right-width: 1px;
+    border-right-color: #000000;
+    border-right-style: solid;
+}
+td.LogoutText {
+    color: #333333;
+    font-size:12px;
+    font-family:Geneva,Arial,Helvetica,sans-serif;
+}
+td.TableTitle {
+    background-color:#303B4A;
+    color:#FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+td.TableCell {
+    background-color:#CFD7E0;
+    border:#333333;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+}
+td.TableLeft {
+    background-color:#CFD7E0;
+    border:#333333;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+td.TableRight {
+    background-color:#CFD7E0;
+    border:#333333;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+}
+td.TableCenter {
+    background-color:#CFD7E0;
+    border:#333333;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+td.TableOther {
+    background-color:#8095AC;
+    color: #303B4A;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.MainTitle {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:24px;
+    color:#000000;
+}
